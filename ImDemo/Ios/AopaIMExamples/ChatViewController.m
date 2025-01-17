@@ -598,7 +598,7 @@ static int64_t lastMessageId = 0;
 }
 
 - (void)onError:(int)code message:(NSString *)msg {
-    [self showToast:[NSString stringWithFormat:@"错误: %d, %@", code, msg]];
+    //[self showToast:[NSString stringWithFormat:@"错误: %d, %@", code, msg]];
 }
 
 - (void)onConnectStatusChanged:(ConnectStatus)status {

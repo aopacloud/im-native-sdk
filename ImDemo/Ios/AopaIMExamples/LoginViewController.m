@@ -156,20 +156,20 @@
     // 设置初始值
     self.localUserIdField.text = @"1234562";
     self.remoteUserIdField.text = @"1234561";
-    self.appIdField.text = xxxx //请联系aopa im团队
+    self.appIdField.text = @"66";
     self.groupId =@"1234567865";
     
     // 设置默认选中的行
-    [self.chatTypePicker selectRow:2 inComponent:0 animated:NO];
-    [self.serverTypePicker selectRow:0 inComponent:0 animated:NO];
+    [self.chatTypePicker selectRow:1 inComponent:0 animated:NO];
+    [self.serverTypePicker selectRow:1 inComponent:0 animated:NO];
     
     // 手动触发选择事件来更新文本
-    [self pickerView:self.chatTypePicker didSelectRow:2 inComponent:0];
-    [self pickerView:self.serverTypePicker didSelectRow:0 inComponent:0];
+    [self pickerView:self.chatTypePicker didSelectRow:1 inComponent:0];
+    [self pickerView:self.serverTypePicker didSelectRow:1 inComponent:0];
     
     // 保存选中的索引
-    self.selectedChatType = 2;
-    self.selectedServerType = 0;
+    self.selectedChatType = 1;
+    self.selectedServerType = 1;
 }
 
 #pragma mark - UIPickerViewDelegate & DataSource
@@ -300,8 +300,10 @@
 
 #pragma mark - IMTokenManagerDelegate
 - (void)onTokenSuccess:(NSString *)token {
+     NSLog(@"onTokenSuccess: 1111");
     int result = [[AopaImEngineKit sharedInstance] login:[self.localUserIdField.text intValue] token:token];
     [[AopaImMediaKit sharedInstance] initialize:self.publicPath];
+     NSLog(@"onTokenSuccess: 222");
     if (result == 0) {
         self.isLoggedIn = YES;
         [self updateButtonStates];
@@ -321,8 +323,10 @@
         
         // 显示会话列表
         [self presentViewController:navController animated:YES completion:nil];
+         NSLog(@"onTokenSuccess: 333");
     } else {
         [self showAlert:@"错误" message:@"登录失败"];
+         NSLog(@"onTokenSuccess: 4444");
     }
 }
 

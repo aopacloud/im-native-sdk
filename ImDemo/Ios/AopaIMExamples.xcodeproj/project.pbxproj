@@ -13,9 +13,9 @@
 		9AD86A8B2CFDAA7E003A41A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AD86A892CFDAA7E003A41A1 /* LaunchScreen.storyboard */; };
 		9AD86A8E2CFDAA7E003A41A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD86A8D2CFDAA7E003A41A1 /* main.m */; };
 		D80B9C702D3575DF0025487B /* ConversationListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D80B9C6B2D3575DF0025487B /* ConversationListViewController.m */; };
-		D85B89442D3A67F300FAE5A8 /* AopaIMSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85B893F2D3A676400FAE5A8 /* AopaIMSDK.xcframework */; };
-		D85B89452D3A67F300FAE5A8 /* AopaIMSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D85B893F2D3A676400FAE5A8 /* AopaIMSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D87193A62D2C12A100F5A6A9 /* IMTokenManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D87193A42D2C12A100F5A6A9 /* IMTokenManager.m */; };
+		D8DB2E3D2D3AB2B4006123EA /* AopaIMSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8DB2E3B2D3AB2AC006123EA /* AopaIMSDK.framework */; };
+		D8DB2E3E2D3AB2B4006123EA /* AopaIMSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D8DB2E3B2D3AB2AC006123EA /* AopaIMSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D8EEABE62D26359400061A5A /* MessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D8EEABE42D26359300061A5A /* MessageCell.m */; };
 		D8EEABE92D263A9F00061A5A /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8EEABE82D263A9F00061A5A /* LoginViewController.m */; };
 		D8EEABEC2D263B1600061A5A /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8EEABEB2D263B1600061A5A /* ChatViewController.m */; };
@@ -24,13 +24,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		D85B89462D3A67F300FAE5A8 /* Embed Frameworks */ = {
+		D8DB2E302D3A96F4006123EA /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D85B89452D3A67F300FAE5A8 /* AopaIMSDK.xcframework in Embed Frameworks */,
+				D8DB2E3E2D3AB2B4006123EA /* AopaIMSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -49,9 +49,10 @@
 		9AD86A8D2CFDAA7E003A41A1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D80B9C6B2D3575DF0025487B /* ConversationListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConversationListViewController.m; sourceTree = "<group>"; };
 		D80B9C6F2D3575DF0025487B /* ConversationListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConversationListViewController.h; sourceTree = "<group>"; };
-		D85B893F2D3A676400FAE5A8 /* AopaIMSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AopaIMSDK.xcframework; path = ../../ImSdk/Ios/AopaIMSDK.xcframework; sourceTree = "<group>"; };
 		D87193A42D2C12A100F5A6A9 /* IMTokenManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTokenManager.m; sourceTree = "<group>"; };
 		D87193A52D2C12A100F5A6A9 /* IMTokenManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTokenManager.h; sourceTree = "<group>"; };
+		D8DB2E282D3A96B0006123EA /* AopaIMSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AopaIMSDK.framework; path = "../../build/ios_arm64/Debug-iphoneos/AopaIMSDK.framework"; sourceTree = "<group>"; };
+		D8DB2E3B2D3AB2AC006123EA /* AopaIMSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AopaIMSDK.framework; path = ../../ImSdk/Ios/AopaIMSDK.framework; sourceTree = "<group>"; };
 		D8EEABE42D26359300061A5A /* MessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageCell.m; sourceTree = "<group>"; };
 		D8EEABE52D26359300061A5A /* MessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageCell.h; sourceTree = "<group>"; };
 		D8EEABE72D263A9F00061A5A /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -68,7 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D85B89442D3A67F300FAE5A8 /* AopaIMSDK.xcframework in Frameworks */,
+				D8DB2E3D2D3AB2B4006123EA /* AopaIMSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,7 +79,7 @@
 		9AD86A6F2CFDAA7D003A41A1 = {
 			isa = PBXGroup;
 			children = (
-				D85B893F2D3A676400FAE5A8 /* AopaIMSDK.xcframework */,
+				D8DB2E3B2D3AB2AC006123EA /* AopaIMSDK.framework */,
 				9AD86A7A2CFDAA7D003A41A1 /* AopaIMExamples */,
 				9AD86A792CFDAA7D003A41A1 /* Products */,
 				9AD86AB42CFDAB6E003A41A1 /* Frameworks */,
@@ -124,6 +125,7 @@
 		9AD86AB42CFDAB6E003A41A1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D8DB2E282D3A96B0006123EA /* AopaIMSDK.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -138,7 +140,7 @@
 				9AD86A742CFDAA7D003A41A1 /* Sources */,
 				9AD86A752CFDAA7D003A41A1 /* Frameworks */,
 				9AD86A762CFDAA7D003A41A1 /* Resources */,
-				D85B89462D3A67F300FAE5A8 /* Embed Frameworks */,
+				D8DB2E302D3A96F4006123EA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -358,10 +360,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = GG65Z932U3;
-				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "/Users/olaola/Desktop/ola/im-native-sdk/im-native-sdk/ImSdk/Ios/AopaIMSDK.xcframework/ios-arm64/AopaIMSDK.framework";
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "\"$(SRCROOT)/../../ImSdk/Ios\"";
 				GENERATE_INFOPLIST_FILE = YES;
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../ImSdk/Ios\"";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../ImSdk/Ios/AopaIMSDK.framework/Headers\"";
 				INFOPLIST_FILE = "/Users/olaola/Desktop/ola/im-native-sdk/im-native-sdk/ImDemo/Ios/AopaIMExamples/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = ola.rtc.NKFAec;
 				INFOPLIST_KEY_NSCameraUsageDescription = "App需要访问相机以拍摄照片";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "App需要访问麦克风以录制语音消息";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "App需要访问相册以保存图片";
@@ -394,10 +397,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = GG65Z932U3;
-				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "/Users/olaola/Desktop/ola/im-native-sdk/im-native-sdk/ImSdk/Ios/AopaIMSDK.xcframework/ios-arm64/AopaIMSDK.framework";
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "\"$(SRCROOT)/../../ImSdk/Ios\"";
 				GENERATE_INFOPLIST_FILE = YES;
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../ImSdk/Ios\"";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../ImSdk/Ios/AopaIMSDK.framework/Headers\"";
 				INFOPLIST_FILE = "/Users/olaola/Desktop/ola/im-native-sdk/im-native-sdk/ImDemo/Ios/AopaIMExamples/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = ola.rtc.NKFAec;
 				INFOPLIST_KEY_NSCameraUsageDescription = "App需要访问相机以拍摄照片";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "App需要访问麦克风以录制语音消息";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "App需要访问相册以保存图片";

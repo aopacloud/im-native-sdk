@@ -1,0 +1,6 @@
+framework module AopaImEngineKit {
+  umbrella header "AopaImEngineKit.h"
+
+  export *
+  module * { export * }
+}
