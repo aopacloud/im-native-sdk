@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">IM Examples</string>
+    <!-- 其他字符串资源 -->
+    <string name="hint_input_message">请输入消息...</string>
+    <string name="btn_send">发送</string>
+    <string name="btn_login">登录</string>
+    <string name="btn_logout">登出</string>
+</resources>
