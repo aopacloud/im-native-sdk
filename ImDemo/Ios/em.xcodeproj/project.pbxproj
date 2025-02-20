@@ -1,0 +1,452 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9AD86A7D2CFDAA7D003A41A1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD86A7C2CFDAA7D003A41A1 /* AppDelegate.m */; };
+		9AD86A802CFDAA7D003A41A1 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD86A7F2CFDAA7D003A41A1 /* SceneDelegate.m */; };
+		9AD86A882CFDAA7E003A41A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AD86A872CFDAA7E003A41A1 /* Assets.xcassets */; };
+		9AD86A8B2CFDAA7E003A41A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AD86A892CFDAA7E003A41A1 /* LaunchScreen.storyboard */; };
+		9AD86A8E2CFDAA7E003A41A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD86A8D2CFDAA7E003A41A1 /* main.m */; };
+		D80B9C702D3575DF0025487B /* ConversationListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D80B9C6B2D3575DF0025487B /* ConversationListViewController.m */; };
+		D87193A62D2C12A100F5A6A9 /* IMTokenManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D87193A42D2C12A100F5A6A9 /* IMTokenManager.m */; };
+		D8DB2E3D2D3AB2B4006123EA /* AopaIMSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8DB2E3B2D3AB2AC006123EA /* AopaIMSDK.framework */; };
+		D8DB2E3E2D3AB2B4006123EA /* AopaIMSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D8DB2E3B2D3AB2AC006123EA /* AopaIMSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D8EEABE62D26359400061A5A /* MessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D8EEABE42D26359300061A5A /* MessageCell.m */; };
+		D8EEABE92D263A9F00061A5A /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8EEABE82D263A9F00061A5A /* LoginViewController.m */; };
+		D8EEABEC2D263B1600061A5A /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8EEABEB2D263B1600061A5A /* ChatViewController.m */; };
+		D8EEAC012D265F6500061A5A /* MessageAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = D8EEABF82D265F6500061A5A /* MessageAdapter.m */; };
+		D8EEAC092D26915600061A5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8EEAC072D26915600061A5A /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D8DB2E302D3A96F4006123EA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D8DB2E3E2D3AB2B4006123EA /* AopaIMSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9AD86A782CFDAA7D003A41A1 /* AopaIMExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AopaIMExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AD86A7B2CFDAA7D003A41A1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9AD86A7C2CFDAA7D003A41A1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9AD86A7E2CFDAA7D003A41A1 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		9AD86A7F2CFDAA7D003A41A1 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		9AD86A872CFDAA7E003A41A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9AD86A8A2CFDAA7E003A41A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9AD86A8C2CFDAA7E003A41A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AD86A8D2CFDAA7E003A41A1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D80B9C6B2D3575DF0025487B /* ConversationListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConversationListViewController.m; sourceTree = "<group>"; };
+		D80B9C6F2D3575DF0025487B /* ConversationListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConversationListViewController.h; sourceTree = "<group>"; };
+		D87193A42D2C12A100F5A6A9 /* IMTokenManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTokenManager.m; sourceTree = "<group>"; };
+		D87193A52D2C12A100F5A6A9 /* IMTokenManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTokenManager.h; sourceTree = "<group>"; };
+		D8DB2E282D3A96B0006123EA /* AopaIMSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AopaIMSDK.framework; path = "../../build/ios_arm64/Debug-iphoneos/AopaIMSDK.framework"; sourceTree = "<group>"; };
+		D8DB2E3B2D3AB2AC006123EA /* AopaIMSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AopaIMSDK.framework; path = ../../ImSdk/Ios/AopaIMSDK.framework; sourceTree = "<group>"; };
+		D8EEABE42D26359300061A5A /* MessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageCell.m; sourceTree = "<group>"; };
+		D8EEABE52D26359300061A5A /* MessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageCell.h; sourceTree = "<group>"; };
+		D8EEABE72D263A9F00061A5A /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		D8EEABE82D263A9F00061A5A /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		D8EEABEA2D263B1600061A5A /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
+		D8EEABEB2D263B1600061A5A /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
+		D8EEABF82D265F6500061A5A /* MessageAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageAdapter.m; sourceTree = "<group>"; };
+		D8EEABF92D265F6500061A5A /* MessageAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageAdapter.h; sourceTree = "<group>"; };
+		D8EEAC082D26915600061A5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9AD86A752CFDAA7D003A41A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8DB2E3D2D3AB2B4006123EA /* AopaIMSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9AD86A6F2CFDAA7D003A41A1 = {
+			isa = PBXGroup;
+			children = (
+				D8DB2E3B2D3AB2AC006123EA /* AopaIMSDK.framework */,
+				9AD86A7A2CFDAA7D003A41A1 /* AopaIMExamples */,
+				9AD86A792CFDAA7D003A41A1 /* Products */,
+				9AD86AB42CFDAB6E003A41A1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9AD86A792CFDAA7D003A41A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9AD86A782CFDAA7D003A41A1 /* AopaIMExamples.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9AD86A7A2CFDAA7D003A41A1 /* AopaIMExamples */ = {
+			isa = PBXGroup;
+			children = (
+				D80B9C6F2D3575DF0025487B /* ConversationListViewController.h */,
+				D80B9C6B2D3575DF0025487B /* ConversationListViewController.m */,
+				D87193A52D2C12A100F5A6A9 /* IMTokenManager.h */,
+				D87193A42D2C12A100F5A6A9 /* IMTokenManager.m */,
+				D8EEAC072D26915600061A5A /* Main.storyboard */,
+				D8EEABF92D265F6500061A5A /* MessageAdapter.h */,
+				D8EEABF82D265F6500061A5A /* MessageAdapter.m */,
+				D8EEABEA2D263B1600061A5A /* ChatViewController.h */,
+				D8EEABEB2D263B1600061A5A /* ChatViewController.m */,
+				D8EEABE72D263A9F00061A5A /* LoginViewController.h */,
+				D8EEABE82D263A9F00061A5A /* LoginViewController.m */,
+				D8EEABE52D26359300061A5A /* MessageCell.h */,
+				D8EEABE42D26359300061A5A /* MessageCell.m */,
+				9AD86A7B2CFDAA7D003A41A1 /* AppDelegate.h */,
+				9AD86A7C2CFDAA7D003A41A1 /* AppDelegate.m */,
+				9AD86A7E2CFDAA7D003A41A1 /* SceneDelegate.h */,
+				9AD86A7F2CFDAA7D003A41A1 /* SceneDelegate.m */,
+				9AD86A872CFDAA7E003A41A1 /* Assets.xcassets */,
+				9AD86A892CFDAA7E003A41A1 /* LaunchScreen.storyboard */,
+				9AD86A8C2CFDAA7E003A41A1 /* Info.plist */,
+				9AD86A8D2CFDAA7E003A41A1 /* main.m */,
+			);
+			path = AopaIMExamples;
+			sourceTree = "<group>";
+		};
+		9AD86AB42CFDAB6E003A41A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8DB2E282D3A96B0006123EA /* AopaIMSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9AD86A772CFDAA7D003A41A1 /* AopaIMExamples */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AD86A912CFDAA7E003A41A1 /* Build configuration list for PBXNativeTarget "AopaIMExamples" */;
+			buildPhases = (
+				9AD86A742CFDAA7D003A41A1 /* Sources */,
+				9AD86A752CFDAA7D003A41A1 /* Frameworks */,
+				9AD86A762CFDAA7D003A41A1 /* Resources */,
+				D8DB2E302D3A96F4006123EA /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AopaIMExamples;
+			productName = AopaIMExamples;
+			productReference = 9AD86A782CFDAA7D003A41A1 /* AopaIMExamples.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9AD86A702CFDAA7D003A41A1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					9AD86A772CFDAA7D003A41A1 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 9AD86A732CFDAA7D003A41A1 /* Build configuration list for PBXProject "em" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9AD86A6F2CFDAA7D003A41A1;
+			productRefGroup = 9AD86A792CFDAA7D003A41A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9AD86A772CFDAA7D003A41A1 /* AopaIMExamples */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9AD86A762CFDAA7D003A41A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AD86A8B2CFDAA7E003A41A1 /* LaunchScreen.storyboard in Resources */,
+				9AD86A882CFDAA7E003A41A1 /* Assets.xcassets in Resources */,
+				D8EEAC092D26915600061A5A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9AD86A742CFDAA7D003A41A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8EEABE62D26359400061A5A /* MessageCell.m in Sources */,
+				D8EEABE92D263A9F00061A5A /* LoginViewController.m in Sources */,
+				9AD86A7D2CFDAA7D003A41A1 /* AppDelegate.m in Sources */,
+				9AD86A8E2CFDAA7E003A41A1 /* main.m in Sources */,
+				D80B9C702D3575DF0025487B /* ConversationListViewController.m in Sources */,
+				D8EEABEC2D263B1600061A5A /* ChatViewController.m in Sources */,
+				D8EEAC012D265F6500061A5A /* MessageAdapter.m in Sources */,
+				9AD86A802CFDAA7D003A41A1 /* SceneDelegate.m in Sources */,
+				D87193A62D2C12A100F5A6A9 /* IMTokenManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9AD86A892CFDAA7E003A41A1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9AD86A8A2CFDAA7E003A41A1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D8EEAC072D26915600061A5A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8EEAC082D26915600061A5A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9AD86A8F2CFDAA7E003A41A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9AD86A902CFDAA7E003A41A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9AD86A922CFDAA7E003A41A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = GG65Z932U3;
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "\"$(SRCROOT)/../../ImSdk/Ios\"";
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../ImSdk/Ios/AopaIMSDK.framework/Headers\"";
+				INFOPLIST_FILE = "/Users/olaola/Desktop/ola/im-native-sdk/im-native-sdk/ImDemo/Ios/AopaIMExamples/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = ola.rtc.NKFAec;
+				INFOPLIST_KEY_NSCameraUsageDescription = "App需要访问相机以拍摄照片";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "App需要访问麦克风以录制语音消息";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "App需要访问相册以保存图片";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "App需要访问相册以发送图片消息";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.03;
+				PRODUCT_BUNDLE_IDENTIFIER = ola.rtc.NKFAec;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9AD86A932CFDAA7E003A41A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = GG65Z932U3;
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "\"$(SRCROOT)/../../ImSdk/Ios\"";
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../ImSdk/Ios/AopaIMSDK.framework/Headers\"";
+				INFOPLIST_FILE = "/Users/olaola/Desktop/ola/im-native-sdk/im-native-sdk/ImDemo/Ios/AopaIMExamples/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = ola.rtc.NKFAec;
+				INFOPLIST_KEY_NSCameraUsageDescription = "App需要访问相机以拍摄照片";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "App需要访问麦克风以录制语音消息";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "App需要访问相册以保存图片";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "App需要访问相册以发送图片消息";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.03;
+				PRODUCT_BUNDLE_IDENTIFIER = ola.rtc.NKFAec;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9AD86A732CFDAA7D003A41A1 /* Build configuration list for PBXProject "em" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AD86A8F2CFDAA7E003A41A1 /* Debug */,
+				9AD86A902CFDAA7E003A41A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AD86A912CFDAA7E003A41A1 /* Build configuration list for PBXNativeTarget "AopaIMExamples" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AD86A922CFDAA7E003A41A1 /* Debug */,
+				9AD86A932CFDAA7E003A41A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9AD86A702CFDAA7D003A41A1 /* Project object */;
+}

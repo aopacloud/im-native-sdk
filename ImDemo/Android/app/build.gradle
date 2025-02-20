@@ -14,7 +14,8 @@ android {
         versionCode 1
         versionName "1.0"
         ndk {
-            abiFilters 'arm64-v8a'
+            //abiFilters 'arm64-v8a'
+            abiFilters 'armeabi-v7a'
         }
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -32,8 +33,8 @@ android {
 }
 
 dependencies {
-    //implementation project(':AopaIMSDK')
-    implementation files('libs/AopaIMSDK-debug.aar')
+    //implementation files('libs/arm64-v8a/AopaIMSDK.aar')
+    implementation files('libs/armeabi-v7a/AopaIMSDK.aar')
     implementation(platform("org.jetbrains.kotlin:kotlin-bom:1.8.22"))
     implementation 'androidx.appcompat:appcompat:1.7.0'
     implementation 'com.google.android.material:material:1.9.0'
